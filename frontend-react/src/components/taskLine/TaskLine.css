@@ -1,0 +1,18 @@
+.taskLine {
+	display: flex;
+	margin: 20px 0px;
+	border:solid 1px rgba(0, 0, 0, 0.177);
+	border-radius: 5px;
+	padding:10px;
+	align-items: center;
+}
+.description{
+	flex-grow:1;
+}
+.taskLine_el{
+	border-right:solid 1px rgba(0, 0, 0, 0.177);
+	padding: 0px 20px;
+}
+.taskLine_el_icon{
+	padding: 0px 10px;
+}
