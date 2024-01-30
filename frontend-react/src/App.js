@@ -1,21 +1,19 @@
 import './App.css';
-import Header from './components/header/Header';
-import TaskLine from './components/taskLine/TaskLine';
-import Task from "./models/Task"
+import EditTask from './pages/EditTask';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  let task=new Task(
-      0,"description",
-      true,"25.01.2024 20:07","25.01.2024 21:07" 
-  );
+
   return (
     <div className="App">
-      <div className="container">
-        <Header />
-        <TaskLine
-          task={task}
-        />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/edit" element={<EditTask />}></Route>
+        </Routes>
+      </Router>
 
     </div>
   );
