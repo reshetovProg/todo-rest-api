@@ -1,0 +1,8 @@
+.input_form>form {
+	display: flex;
+	gap: 20px;
+}
+
+.input_form>form>Button {
+	width: 200px;
+}
